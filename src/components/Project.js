@@ -6,6 +6,17 @@ const project = props.project
     if (project===undefined) {
         return null
     }
+const linkToGitHub = (project) => {
+    if (project.codeUrl===null) {
+        return null
+    }
+    return (
+        <p>
+            Koodi löytyy <a href={project.codeUrl}>täältä.</a>
+        </p>
+    )
+
+}
     return (
         <Segment textAlign='center'>
         <Header as="h1" icon>
@@ -15,6 +26,7 @@ const project = props.project
         <Image src={project.img} size='medium' floated='left' />
             <p>{project.description}</p>
             <p>{project.content}</p>
+            {linkToGitHub(project)}
         </Segment>
     )
 }
