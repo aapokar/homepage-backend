@@ -11,7 +11,7 @@ const TopMenu = () => {
     }
 
     return (
-    <Menu stackable fluid widths={4}>
+    <Menu stackable fluid widths={5}>
         <Menu.Item
             as={Link}
             to="/"
@@ -32,6 +32,12 @@ const TopMenu = () => {
             active={activeItem === 'projektit'}
             onClick={() =>handleItemClick('projektit')}
         >Projektit</Menu.Item>
+        <Menu.Item 
+            as={Link}
+            to="/joke"
+            active={activeItem === 'joke'}
+            onClick={() =>handleItemClick('joke')}
+        >Viihde</Menu.Item>
         <Menu.Item 
             as={Link}
             to="/about"

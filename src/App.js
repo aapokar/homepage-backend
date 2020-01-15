@@ -5,6 +5,7 @@ import {Container} from 'semantic-ui-react'
 import { connect } from 'react-redux'
 
 import { initializeProjects } from './reducers/projectsReducer'
+import {setJoke} from './reducers/jokeReducer'
 import projectsList from './data/projects'
 
 import TopMenu from './components/TopMenu'
@@ -13,12 +14,17 @@ import Projektit from './components/Projektit'
 import Project from './components/Project'
 import Home from './components/Home'
 import About from './components/About'
+import Joke from './components/Joke'
 
 
 function App(props) {
 
   useEffect(() => {
     props.initializeProjects(projectsList)
+  }, [])
+
+  useEffect(() => {
+    props.setJoke()
   }, [])
 
   const projectById = (id) => {
@@ -36,6 +42,9 @@ function App(props) {
           </Route>
           <Route path="/kuka">
             <Kuka />
+          </Route>
+          <Route path="/joke">
+            <Joke />
           </Route>
           <Route path="/projektit">
             <h1>Menneitä projekteja vuosien varrelta</h1>
@@ -61,7 +70,8 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = {
-  initializeProjects
+  initializeProjects,
+  setJoke
 }
 
 const connectedApp = connect(mapStateToProps, mapDispatchToProps)(App)

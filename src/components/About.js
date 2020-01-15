@@ -7,6 +7,7 @@ return (
     <p>
         Sivusto on rakennettu Reactilla. Muotoilut on tehty Semantic UIn React-yhteensopivilla komponenteilla. Semantic ui vastaa myös responsiivisuudesta. Muita kirjastoja: Redux, Redux-React, React-router.
     </p>
+    <p>Viihdepuolella vitsejä haetaan Chuck Norris-vitsien tietokannasta, en ole keksinyt kaikkia itse...</p>
     </div>
 )
 }
