@@ -13,6 +13,7 @@ const Joke = (props) => {
     return (
         <Segment textAlign='center'>
             <Button icon onClick={handleClick}>
+            Paina tästä ja lisää viihtymistäsi!<br/>
             <Icon name='random' loading  />
             </Button>
             <p>{props.joke}</p>

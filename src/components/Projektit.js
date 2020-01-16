@@ -6,7 +6,6 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 
 
 const projektit = (props) => {
-
     const mappedProjects = props.projects.map(p => 
         <Card as={Link} to={p.url} key={p.id}>
             <Image src={p.img} wrapped ui={false} />

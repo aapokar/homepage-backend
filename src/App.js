@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 
 import { initializeProjects } from './reducers/projectsReducer'
 import {setJoke} from './reducers/jokeReducer'
-import projectsList from './data/projects'
+import projectsList, {selector} from './data/projects'
 
 import TopMenu from './components/TopMenu'
 import Kuka from './components/Kuka'
@@ -15,6 +15,8 @@ import Project from './components/Project'
 import Home from './components/Home'
 import About from './components/About'
 import Joke from './components/Joke'
+
+import Ennustin from './data/projectComponents/Ennustin'
 
 
 function App(props) {
@@ -28,8 +30,10 @@ function App(props) {
   }, [])
 
   const projectById = (id) => {
-    return props.projects.find(a => a.id===id)
+    // return props.projects.find(a => a.id===id)
+    return selector(id)
   }
+
 
   return (
     // <div>
@@ -51,7 +55,7 @@ function App(props) {
             <Projektit />
           </Route>
           <Route exact path="/projects/:id" render={({ match }) =>
-              <Project project={projectById(match.params.id)} />
+             <div>{projectById(match.params.id)}</div>
           } />
           <Route exact path="/">
             <Home />
