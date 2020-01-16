@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'http://api.icndb.com/jokes/random'
+const baseUrl = 'https://api.icndb.com/jokes/random'
 
 const getRandom = () => {
   const request = axios.get(baseUrl)
