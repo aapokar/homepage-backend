@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.js": "/static/js/main.5a47e4a4.chunk.js",
+    "main.js.map": "/static/js/main.5a47e4a4.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.d11dd7d6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.d11dd7d6.js.map",
+    "static/css/2.7d0379c8.chunk.css": "/static/css/2.7d0379c8.chunk.css",
+    "static/js/2.aa51a402.chunk.js": "/static/js/2.aa51a402.chunk.js",
+    "static/js/2.aa51a402.chunk.js.map": "/static/js/2.aa51a402.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.de48e888ad106c022c012635c38ceb97.js": "/precache-manifest.de48e888ad106c022c012635c38ceb97.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.7d0379c8.chunk.css.map": "/static/css/2.7d0379c8.chunk.css.map",
+    "static/js/2.aa51a402.chunk.js.LICENSE": "/static/js/2.aa51a402.chunk.js.LICENSE",
+    "static/media/semantic.less": "/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/mcp3008.jpg": "/static/media/mcp3008.7a2a0e96.jpg",
+    "static/media/mcp_datasheet.png": "/static/media/mcp_datasheet.cfe0bc25.png",
+    "static/media/me.jpg": "/static/media/me.47d49092.jpg",
+    "static/media/mearm.jpg": "/static/media/mearm.b643eb11.jpg",
+    "static/media/mearm_contents.JPG": "/static/media/mearm_contents.d39280ee.JPG",
+    "static/media/mearm_on.JPG": "/static/media/mearm_on.16e48e83.JPG",
+    "static/media/nopeuspeli.jpg": "/static/media/nopeuspeli.f667b80d.jpg",
+    "static/media/ss.JPG": "/static/media/ss.08d9aba0.JPG",
+    "static/media/ss_cont1.JPG": "/static/media/ss_cont1.8e19b295.JPG",
+    "static/media/ss_cont2.JPG": "/static/media/ss_cont2.fc6124d6.JPG",
+    "static/media/wp.jpg": "/static/media/wp.246fdb28.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d11dd7d6.js",
+    "static/css/2.7d0379c8.chunk.css",
+    "static/js/2.aa51a402.chunk.js",
+    "static/js/main.5a47e4a4.chunk.js"
+  ]
+}
