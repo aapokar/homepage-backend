@@ -48,11 +48,38 @@ app.post('/api/game', (request, response) => {
   })
 })
 
+app.put('/api/game', (request, response, next) => {
+  const body = request.body
+  const game =
+      {
+      number: body.name,
+  }
+
+  Name.find({}).then(res => {
+    console.log('res: ', res, " game: ", game)
+  })
+
+  // Name.findByIdAndUpdate(request.params.id, {$set: game}, {new:true, runValidators: true, context: 'query'})
+  //     .then(updatedName => {
+  //         console.log(updatedName.toJSON())
+  //         console.log(updatedName)
+  //         response.json(updatedName.toJSON())
+  //     })
+  //     .catch(error => next(error))
+
+})
 
 
 
 
 
+const unknownEndpoint = (request, response) => {
+  response.status(404).send({
+      error: 'unknown endpoint'
+  })
+}
+// olemattomien osoitteiden käsittely
+app.use(unknownEndpoint)
 
 
 const PORT = process.env.PORT || 3001
