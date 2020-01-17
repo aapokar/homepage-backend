@@ -9,6 +9,7 @@ gameRouter.get('/', (request, response) => {
     })
   })
 
+  //Uusien tietojen lisääminen ei ole tarpeen
 // app.post('/', (request, response, next) => {
 //   const body = request.body
 //   if (body.status === undefined) {
@@ -18,7 +19,6 @@ gameRouter.get('/', (request, response) => {
 //     status: body.status
 //   })
 //   game.save().then(savedGame => {
-//     console.log('toimi!')
 //     response.json(savedGame.toJSON())
 //   })
 //   .catch(error => next(error))
@@ -68,7 +68,6 @@ gameRouter.put('/', async (request, response, next) => {
 
           const eiVoittoa = {
             score: currentScore -1,
-            // voitto: 'ei voittoa',
             next: seuraavaVoitto()
           }
           response.json(eiVoittoa)
