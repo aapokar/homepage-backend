@@ -4,7 +4,7 @@ const Game = require('../models/game')
 
 gameRouter.get('/', (request, response) => {
     Game.find({}).then(status => {
-      console.log(status)
+      // console.log(status)
       response.json(status)
     })
   })
@@ -64,7 +64,7 @@ gameRouter.put('/', async (request, response, next) => {
             return x
           }
 
-          console.log(seuraavaVoitto())
+          // console.log(seuraavaVoitto())
 
           const eiVoittoa = {
             score: currentScore -1,

@@ -1,4 +1,5 @@
 const gameRouter = require('./controllers/game')
+const rootRouter = require('./controllers/router')
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
@@ -24,12 +25,12 @@ mongoose.connect(url, {
   })
 
 
-
 app.use(cors())
 app.use(express.static('build'))
 app.use(bodyParser.json())
 app.use(middleware.requestLogger)
 app.use('/api/game', gameRouter)
+app.use('*', rootRouter)
 
 app.use(middleware.unknownEndpoint)
 
