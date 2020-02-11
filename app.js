@@ -1,6 +1,7 @@
 /*eslint no-unused-vars: ["error", { "args": "none" }]*/
 
 const gameRouter = require('./controllers/game')
+const weatherRouter = require('./controllers/weather')
 const rootRouter = require('./controllers/router')
 const express = require('express')
 const app = express()
@@ -32,6 +33,7 @@ app.use(express.static('build'))
 app.use(bodyParser.json())
 app.use(middleware.requestLogger)
 app.use('/api/game', gameRouter)
+app.use('/api/weather', weatherRouter)
 app.use('*', rootRouter)
 
 app.use(middleware.unknownEndpoint)
